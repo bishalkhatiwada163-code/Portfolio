@@ -605,9 +605,9 @@ async function fetchGitHubUserInfo(username) {
             const user = await response.json();
             
             // Update profile image if available
-            if (user.avatar_url) {
-                updateProfileImage(user.avatar_url);
-            }
+            // if (user.avatar_url) {
+            //     updateProfileImage(user.avatar_url);
+            // }
             
             // Update name if available
             if (user.name) {

@@ -720,6 +720,30 @@ section::before {
     gap: var(--spacing-sm);
 }
 
+.about-pic {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto var(--spacing-md);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    aspect-ratio: 1;
+    position: relative;
+    box-shadow: 0 0 30px rgba(99, 102, 241, 0.3);
+    border: 2px solid rgba(99, 102, 241, 0.2);
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.about-pic:hover .profile-pic {
+    transform: scale(1.05);
+}
+
 .experience-card {
     padding: var(--spacing-md);
     background: rgba(255, 255, 255, 0.03);
